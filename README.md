@@ -13,21 +13,11 @@ A simple, elegant browser extension for Chromium-based browsers (Chrome, Edge, B
 
 ## Installation
 
-### Quick Start (without custom icons):
-
 1. Download or clone this repository
-2. **Option A**: Use `manifest-no-icons.json` (rename to `manifest.json`) if you don't have icons yet
-3. Open your browser and navigate to `chrome://extensions/` (or `edge://extensions/` for Edge)
-4. Enable "Developer mode" (toggle in top-right corner)
-5. Click "Load unpacked"
-6. Select the folder containing this extension
-
-### Full Installation (with custom icons):
-
-1. Generate icons using `generate-icons.html` (see Icon Generation below)
-2. Place icons in the `icons/` directory
-3. Use the default `manifest.json`
-4. Follow steps 3-5 above
+2. Open your browser and navigate to `chrome://extensions/` (or `edge://extensions/` for Edge)
+3. Enable "Developer mode" (toggle in top-right corner)
+4. Click "Load unpacked"
+5. Select the folder containing this extension
 
 ### For Development:
 
@@ -57,21 +47,12 @@ browser-extension-scratchpad/
 ├── tab.html              # Full-page tab version
 ├── tab.css               # Styles for tab version
 ├── tab.js                # Logic for tab version
-├── icons/                # Extension icons (optional)
+├── icons/                # Extension icons
 │   ├── icon16.png
 │   ├── icon48.png
 │   └── icon128.png
-├── generate-icons.html   # Helper to generate icons
 └── README.md             # This file
 ```
-
-### Generating Icons
-
-Icons are optional - the extension will work without them (browser will show default icon). To generate icons:
-
-1. Open `generate-icons.html` in your browser
-2. Right-click each canvas and save as PNG with the corresponding filename
-3. Place them in the `icons/` directory
 
 ## Technical Details
 
@@ -95,10 +76,9 @@ const DEBOUNCE_DELAY = 1000; // Change to 1000ms (1 second)
 Edit `popup.js` and modify the `STORAGE_KEY` constant:
 
 ```javascript
-const STORAGE_KEY = 'my_custom_key';
+const STORAGE_KEY = "my_custom_key";
 ```
 
 ## License
 
 MIT License - Feel free to use and modify as needed!
-
