@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scratchpad - Universal Browser Extension</title>
+  <link rel="stylesheet" href="tab.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="header-content">
+        <h1>Scratchpad</h1>
+        <div class="status" id="status">
+          <span class="status-indicator" id="statusIndicator"></span>
+          <span class="status-text" id="statusText">Ready</span>
+        </div>
+      </div>
+    </header>
+    
+    <div class="content">
+      <textarea 
+        id="contentTextarea" 
+        placeholder="Start typing your notes here... Content will be saved automatically after you stop typing."
+      ></textarea>
+    </div>
+    
+    <footer>
+      <div class="footer-content">
+        <button id="clearBtn" class="btn-secondary">Clear</button>
+        <button id="saveBtn" class="btn-primary">Save Now</button>
+      </div>
+    </footer>
+  </div>
+  
+  <script src="tab.js"></script>
+</body>
+</html>
+

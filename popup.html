@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scratchpad</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Scratchpad</h1>
+      <div class="status" id="status">
+        <span class="status-indicator" id="statusIndicator"></span>
+        <span class="status-text" id="statusText">Ready</span>
+      </div>
+    </header>
+    
+    <div class="content">
+      <textarea 
+        id="contentTextarea" 
+        placeholder="Start typing your notes here... Content will be saved automatically after you stop typing."
+        rows="15"
+      ></textarea>
+    </div>
+    
+    <footer>
+      <button id="openTabBtn" class="btn-secondary">Open in Tab</button>
+      <button id="clearBtn" class="btn-secondary">Clear</button>
+      <button id="saveBtn" class="btn-primary">Save Now</button>
+    </footer>
+  </div>
+  
+  <script src="popup.js"></script>
+</body>
+</html>
+
